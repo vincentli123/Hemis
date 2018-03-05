@@ -1,0 +1,213 @@
+{
+	"info": {
+		"name": "Hemis_Requests",
+		"_postman_id": "31107d15-e452-e92f-7ab3-b93222758a99",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hemis-login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"mbutton@informedactions.com\", \"password\":\"1200974140\"}"
+				},
+				"url": {
+					"raw": "http://vertuozapps.cloudapp.net:8080/hemisphere/users/signin",
+					"protocol": "http",
+					"host": [
+						"vertuozapps",
+						"cloudapp",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"hemisphere",
+						"users",
+						"signin"
+					]
+				},
+				"description": "First request"
+			},
+			"response": []
+		},
+		{
+			"name": "buildings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c1080fc0-90ac-427a-9533-ee9bec5aa84d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://vertuozapps.cloudapp.net:8080/hemisphere/buildings/mine/infos/",
+					"protocol": "http",
+					"host": [
+						"vertuozapps",
+						"cloudapp",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"hemisphere",
+						"buildings",
+						"mine",
+						"infos",
+						""
+					]
+				},
+				"description": "First get request"
+			},
+			"response": []
+		},
+		{
+			"name": "buildings-login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "314a0757-450b-7889-8c2f-9ca33b3c72a5"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "mbutton@informedactions.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ce08f0ac-8fe1-4f84-b238-82cc471d105d",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "kernelId",
+							"value": "hemis4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/WS_UserManagement/login",
+					"host": [
+						"sad-poincare-i76vm5gt",
+						"vertuozpilot",
+						"engie",
+						"fr"
+					],
+					"path": [
+						"hemis",
+						"rest",
+						"WS_UserManagement",
+						"login"
+					]
+				},
+				"description": "Post request for the temperatures"
+			},
+			"response": []
+		},
+		{
+			"name": "list-intelligent-things",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a3c652d4-bda6-4502-b731-bc3db0f3fb6b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/",
+					"protocol": "https",
+					"host": [
+						"sad-poincare-i76vm5gt",
+						"vertuozpilot",
+						"engie",
+						"fr"
+					],
+					"path": [
+						"hemis",
+						"rest",
+						"intelligent-things",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "sensors-for-intelligent-things",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a3c652d4-bda6-4502-b731-bc3db0f3fb6b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/04957592D45480/sensors",
+					"protocol": "https",
+					"host": [
+						"sad-poincare-i76vm5gt",
+						"vertuozpilot",
+						"engie",
+						"fr"
+					],
+					"path": [
+						"hemis",
+						"rest",
+						"intelligent-things",
+						"04957592D45480",
+						"sensors"
+					]
+				},
+				"description": "sensors-for-intelligent-things"
+			},
+			"response": []
+		}
+	]
+}
