@@ -1,0 +1,258 @@
+{
+	"id": "899d5d7a-59a6-4ad1-ba5f-39c3f7ae4e8b",
+	"name": "ENGIE",
+	"allTests": [],
+	"timestamp": "2018-03-04T17:50:05.632Z",
+	"collection_id": "e37c0554-fcac-384e-b491-2de6e6245c5c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "no-environment",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "e37c0554-fcac-384e-b491-2de6e6245c5c",
+		"name": "ENGIE",
+		"description": "",
+		"order": [
+			"2b513378-c235-f746-f776-8c18543d71f8",
+			"87514024-3827-b520-12c9-7f92fb7275a5",
+			"03b1d25d-874f-1f0a-9402-c1b9fdb4fd36",
+			"072a14cd-e39f-751f-a279-ce38c364ea22",
+			"e05bcd83-1f3c-3222-117f-888f6e40282f"
+		],
+		"folders": [],
+		"folders_order": [],
+		"timestamp": 0,
+		"synced": true,
+		"remote_id": 0,
+		"owner": "3788398",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1520087594089,
+		"updatedAt": 1520087594089,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"events": [],
+		"variables": [],
+		"auth": null
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Hemis Login",
+			"id": "2b513378-c235-f746-f776-8c18543d71f8",
+			"url": "http://vertuozapps.cloudapp.net:8080/hemisphere/users/signin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"79"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "79",
+			"totalRequestTime": "79",
+			"iterationResults": {}
+		},
+		{
+			"name": "Buildings",
+			"id": "87514024-3827-b520-12c9-7f92fb7275a5",
+			"url": "http://vertuozapps.cloudapp.net:8080/hemisphere/buildings/mine/infos/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"69"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "69",
+			"totalRequestTime": "69",
+			"iterationResults": {}
+		},
+		{
+			"name": "Building Login",
+			"id": "03b1d25d-874f-1f0a-9402-c1b9fdb4fd36",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/WS_UserManagement/login",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 422,
+				"name": "Unprocessable Entity",
+				"detail": {
+					"name": "Unprocessable Entity (WebDAV) (RFC 4918)",
+					"detail": "The request was well-formed but was unable to be followed due to semantic errors."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"161"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "161",
+			"totalRequestTime": "161",
+			"iterationResults": {}
+		},
+		{
+			"name": "List Intelligent Things",
+			"id": "072a14cd-e39f-751f-a279-ce38c364ea22",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"89"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "89",
+			"totalRequestTime": "89",
+			"iterationResults": {}
+		},
+		{
+			"name": "SENSORS for intelligent things",
+			"id": "e05bcd83-1f3c-3222-117f-888f6e40282f",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/04957592D45480/sensors",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"131"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "131",
+			"totalRequestTime": "131",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 529,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Hemis Login",
+			"id": "2b513378-c235-f746-f776-8c18543d71f8",
+			"url": "http://vertuozapps.cloudapp.net:8080/hemisphere/users/signin",
+			"time": "2018-03-04T17:50:05.632Z",
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type",
+				"detail": {
+					"name": "Unsupported Media Type",
+					"detail": "The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Buildings",
+			"id": "87514024-3827-b520-12c9-7f92fb7275a5",
+			"url": "http://vertuozapps.cloudapp.net:8080/hemisphere/buildings/mine/infos/",
+			"time": "2018-03-04T17:50:05.632Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Building Login",
+			"id": "03b1d25d-874f-1f0a-9402-c1b9fdb4fd36",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/WS_UserManagement/login",
+			"time": "2018-03-04T17:50:05.632Z",
+			"responseCode": {
+				"code": 422,
+				"name": "Unprocessable Entity",
+				"detail": {
+					"name": "Unprocessable Entity (WebDAV) (RFC 4918)",
+					"detail": "The request was well-formed but was unable to be followed due to semantic errors."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "List Intelligent Things",
+			"id": "072a14cd-e39f-751f-a279-ce38c364ea22",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/",
+			"time": "2018-03-04T17:50:05.632Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "SENSORS for intelligent things",
+			"id": "e05bcd83-1f3c-3222-117f-888f6e40282f",
+			"url": "https://sad-poincare-i76vm5gt.vertuozpilot.engie.fr/hemis/rest/intelligent-things/04957592D45480/sensors",
+			"time": "2018-03-04T17:50:05.632Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
